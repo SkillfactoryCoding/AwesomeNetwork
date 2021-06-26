@@ -40,6 +40,13 @@ namespace AwesomeNetwork.Controllers.Account
             return View(new LoginViewModel { ReturnUrl = returnUrl });
         }
 
+        [Route("MyPage")]
+        [HttpGet]
+        public IActionResult MyPage()
+        {
+            return View("User");
+        }
+
         [Route("Login")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -60,7 +67,7 @@ namespace AwesomeNetwork.Controllers.Account
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("MyPage", "AccountManager");
                     }
                 }
                 else
