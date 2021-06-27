@@ -23,7 +23,7 @@
             color: white;
         }
 
-    .topnav .righ-align {
+.righ-align {
         float: right;
     }
 
@@ -51,4 +51,33 @@
     .topnav input[type=text] {
         border: 1px solid #ccc;
     }
+}
+
+.gray-text {
+    color: darkgray;
+}
+
+.lined-block {
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-color: #ddd;
+    padding: 10px;
+    border-style: dashed;
+    margin: 10px;
+
+}
+
+.center-align {
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ava 
+{
+    width: 20%;
+    max-width: max-content;
 }
