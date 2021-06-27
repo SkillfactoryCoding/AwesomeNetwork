@@ -76,8 +76,24 @@
     margin-right: auto;
 }
 
-.ava 
-{
-    width: 20%;
-    max-width: max-content;
+.ava {
+    width: 100%;
+    max-width: 150px;
 }
+.min-width-but {
+    max-width: 150px;
+    width: 100%;
+}
+
+.friendcontainer {
+    overflow: hidden;
+}
+
+.friendbox {
+    white-space: nowrap
+}
+
+    .friendbox .datadiv {
+        display: inline-block;
+        max-width: 150px;
+    }
